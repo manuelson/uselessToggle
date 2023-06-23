@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, useRef, useEffect, Fragment } from "react";
 import { gsap } from "gsap";
-
+import { Helmet } from 'react-helmet';
 
 function App() {
 
@@ -47,7 +47,6 @@ function App() {
     }
 
     useEffect(() => {
-      document.title = 'Yes, this is a useless checkbox.';
       const grabBearTL = () => {
         /**
          * Different height translations for the bear elements
